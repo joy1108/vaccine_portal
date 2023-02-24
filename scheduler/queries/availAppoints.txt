@@ -1,0 +1,5 @@
+SELECT distinct va.appoint_id, p.provider_id, va.appoint_date, va.appoint_time, p.provider_location
+FROM `Provider` AS p JOIN `VaccineAppointment` AS va on p.provider_id = va.provider_id LEFT OUTER JOIN vaccineoffer AS vo on 
+va.appoint_id = vo.appoint_id
+WHERE (vo.status NOT IN (?) AND va.appoint_date > NOW()) OR 
+(va.appoint_id NOT IN (select appoint_id from vaccineoffer) AND va.appoint_date > NOW());

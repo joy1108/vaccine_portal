@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+* {
+  font-family: 'Outfit', sans-serif;
+}
+
+:root {
+  --accent: #663399;
+  --black: #2a2a2a;
+  --white: #ededed;
+}
+
+body {
+  height: 100vh;
+  background: #2C3E50;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #663399, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #663399, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-attachment: fixed;
+}
+
+.bk-primary {
+  background: white;
+}
+
+.bk-success {
+  background: white;
+}
+
+.bk-warning {
+  background: white;
+}
+
+.bk-danger {
+  background: white;
+}
+
+.loginForm {
+  width: 100%;
+}
+
+.card {
+  height: auto;
+  padding: 40px;
+  box-shadow: 0px 0px 5px var(--white);
+}
+
+.card > p {
+  font-size: 48px;
+  padding: 40px 0;
+}
+
+.card > h2 {
+  padding-left: 15px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+a {
+  color: inherit !important;
+}
+
+.form-group {
+  padding-top: 20px;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: var(--accent) !important;
+  border: 2px solid var(--accent);
+  padding: 20px 40px !important;
+  width: 100%;
+  transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btn-primary:hover {
+  background-color: white !important;
+  color: var(--accent);
+  font-weight: bolder;
+}
+
+.navbar {
+  color: white;
+}
+
+.nav {
+  color: white;
+}
+
+.nav > li > a:hover, 
+.nav > li > a:focus
+{
+  background-color: var(--white) !important;
+  color: var(--accent) !important;
+}
+
+#map {
+  height: 500px !important;
+  width: 950px !important;
+  margin-left: 70px;
+}
+
+.appointmentStatus {
+  color: white;
+}
+
+th {
+  background-color: white !important;
+  color: var(--black) !important;
+}
+
+#myTable tr,
+tbody {
+  border-bottom: 1px solid #ddd;
+  background-color: #eaeaea;
+}
+
+.navbar-inverse
+{
+  background:white;
+  border-bottom-color: #004D40;
+}
+
+.dropdown-menu {
+  background-color: white !important;
+  color: var(--black);
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.logoheader {
+  font-size: 48px;
+}
