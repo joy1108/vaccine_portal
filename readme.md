@@ -1,4 +1,4 @@
-## Info
+## About
 
 A fully Functional Patient & Provider portal for vaccinations with automatic appointment matching.
 
